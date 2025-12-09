@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="index.js" , defer></script>
   <script src="https://kit.fontawesome.com/d1134a61a9.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +19,22 @@
 
 <body>
 
-  <section class="background">
+  <main class="background">
     <header>
       <img class="logo" src="./images/logo.svg" alt="">
       <div class="title">
-        <h1 class="principle">We are launching</h1>
-        <h1 class="end">soon!</h1>
+        <h1>We are launching
+          <span>soon!</span>
+        </h1>
       </div>
       <h2>Subscribe and get notified</h2>
-      <form action="">
-        <input type="text" placeholder="Your email address...">
-        <button>Notify Me</button>
+      <form action="#" method="POST">
+        <label for="email-input" class="visually-hidden">Your email address</label>
+        <div class="input-button">
+          <input type="text" id="email-input" name="email" placeholder="Your email address..." aria-required="true">
+          <p class="error-message" id="email-error"></p>
+          <button type="submit">Notify Me</button>
+        </div>
       </form>
     </header>
 
@@ -47,7 +52,7 @@
         &copy; Copyright Ping. All rights reserved.
       </p>
     </footer>
-  </section>
+  </main>
 
 </body>
 
