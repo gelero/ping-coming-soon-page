@@ -5,11 +5,13 @@
 }
 
 body {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3.8rem;
     font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
 }
 
 main.background {
@@ -29,7 +31,7 @@ header {
 
 .logo {
     width: 75px;
-    margin-bottom: 2rem;
+    margin-bottom: 2.8rem;
 }
 
 div.title {
@@ -60,8 +62,8 @@ h2 {
 }
 
 form {
-    position: relative; 
-    display: block; 
+    position: relative;
+    display: block;
     width: 600px;
     margin: 0 auto;
 }
@@ -119,13 +121,13 @@ button:hover {
 
 p.error-message {
     font-size: 12px;
-    color: hsl(354, 100%, 66%); 
+    color: hsl(354, 100%, 66%);
     visibility: hidden;
     min-height: 1.2em;
-    position: absolute; 
+    position: absolute;
     top: 55px;
-    left: 10px;
-    width: 370px; 
+    left: 20px;
+    width: 370px;
     text-align: left;
 }
 
@@ -181,17 +183,15 @@ footer {
 
 @media (max-width: 620px) {
 
-    form {
-        position: relative;
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
+    .logo {
+        width: 60px;
+        margin-bottom: 3rem;
     }
 
-   h1 {
+    h1 {
         font-weight: 300;
         font-size: 1.875rem;
-        letter-spacing: 1px; 
+        letter-spacing: 1px;
         text-align: center;
     }
 
@@ -207,8 +207,15 @@ footer {
     }
 
     div.title {
-        gap: 0; 
+        gap: 0;
         margin-bottom: 1rem;
+    }
+
+    form {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
     }
 
     div.input-button {
@@ -226,10 +233,10 @@ footer {
         text-align: center;
         width: 100%;
         display: none;
-        margin-top: -5px; 
-        margin-bottom: 5px; 
-        left: auto; 
-        top: auto; 
+        margin-top: -5px;
+        margin-bottom: 15px;
+        left: auto;
+        top: auto;
     }
 
     button {
@@ -244,3 +251,28 @@ footer {
 
 }
 
+@media (max-width: 390px) {
+
+    .logo {
+        width: 50px;
+        margin-bottom: 2.2rem;
+    }
+
+    h1 {
+        font-weight: 300;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    span {
+        font-weight: 700;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: .9rem;
+        text-align: center;
+    }
+}
